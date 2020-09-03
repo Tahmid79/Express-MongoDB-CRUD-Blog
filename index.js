@@ -20,7 +20,7 @@ app.get('/' , function (req, res , next){
 } ,  function(req , res , next){
     res.send('Request was successful') ;
 
-}  );
+}  )    ;
 
 
 app.use(routes) ;
