@@ -11,16 +11,10 @@ mongoose.connect('mongodb://localhost/test',
 
 
 
-app.get('/' , function (req, res , next){
-   console.log('Request Method : ' , req.method) ;
-    next() ;
-} , function (req , res, next) {
-    console.log('Request Original URL : ', req.originalUrl  ) ;
-    next() ;
-} ,  function(req , res , next){
-    res.send('Request was successful') ;
 
-}  )    ;
+app.get('/' ,  function(req, res , next){
+    console.log('Request Method : ' , req.method ) ;
+});
 
 
 app.use(routes) ;
