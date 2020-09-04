@@ -4,10 +4,10 @@ var schema  = mongoose.Schema ;
 
 var blogSchema  = new schema({
 
-   title : String  ,
+    title : String  ,
     author : String ,
     body : String
 
 });
 
-module.exports = blogSchema ;
+module.exports =  blogSchema  ;
